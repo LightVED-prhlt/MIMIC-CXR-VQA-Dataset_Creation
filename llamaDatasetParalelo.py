@@ -51,7 +51,7 @@ data["indication"] = data["images"].apply(lambda x: extract_indication(x, args.m
 data.to_csv("updated_reports.csv", index=False)
 print("Updated dataset saved to updated_reports.csv")
 
-columns = ["index", "patient_id", "study_id", "question", "answer", "question_label", "question_value", "image_path", "view_position"]
+columns = ["index", "patient_id", "study_id", "question", "answer", "question_label", "question_value", "indication", "image_path", "view_position"]
 if not os.path.exists(output_csv):
     pd.DataFrame(columns=columns).to_csv(output_csv, index=False)
 
@@ -68,7 +68,6 @@ print(f"Processing data from index {start_index} to {end_index - 1}")
 
 
 def process_row(index, row):
-    actual_index = start_index + index
     text = row['text']
     images_path = row['images']
     view_position = row['ViewPosition']
@@ -90,9 +89,8 @@ def process_row(index, row):
     with ThreadPoolExecutor(max_workers=num_workers) as executor:
         future_to_question = {}
         
-        # Submit tasks and print start messages
+        # Submit tasks
         for label, value, question in questions:
-            # print(f"[START] Task for Question '{question}' (Index: {actual_index})")
             future = executor.submit(generate_question_answer, text, question, indication)
             future_to_question[future] = (label, value, question)
 
@@ -101,19 +99,18 @@ def process_row(index, row):
             label, value, question = future_to_question[future]
             try:
                 qa_pair = future.result()
-                # print(f"[DONE] Task for Question '{question}' (Index: {actual_index}) - Answer: {qa_pair['answer']}")
             except Exception as e:
                 qa_pair = {"question": question, "answer": f"error: {str(e)}"}
-                # print(f"[ERROR] Task for Question '{question}' (Index: {actual_index}) - Error: {e}")
 
             row_data = {
-                "index": actual_index,
+                "index": index,
                 "patient_id": patient_id,
                 "study_id": study_id,
                 "question": qa_pair["question"],
                 "answer": qa_pair["answer"],
                 "question_label": label,
                 "question_value": value,
+                "indication": indication,
                 "image_path": images_path,
                 "view_position": view_position
             }
@@ -131,11 +128,9 @@ for index, row in tqdm(data.iterrows(), total=len(data), desc="Processing rows")
     if index % save_interval == 0 and index != 0:
         pd.DataFrame(all_results).to_csv(output_csv, mode='a', header=False, index=False)
         all_results = []
-        print(f"Saved at index {index} to {output_csv}")
 
 # Save any remaining results
 if all_results:
     pd.DataFrame(all_results).to_csv(output_csv, mode='a', header=False, index=False)
-    print(f"Saved final {len(all_results)} rows to {output_csv}")
 
 print(f"Question-answer pairs saved to {output_csv}")
