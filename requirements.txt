@@ -1,0 +1,7 @@
+ollama
+pandas
+tqdm
+argparse
+numpy
+multiprocessing
+concurrent.futures
