@@ -4,7 +4,7 @@ import pandas as pd
 from tqdm import tqdm
 import argparse
 from extract_indication import extract_indication
-from GenerarPreguntas import QuestionGenerator
+from GenerateQuestions import QuestionGenerator
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import multiprocessing
 

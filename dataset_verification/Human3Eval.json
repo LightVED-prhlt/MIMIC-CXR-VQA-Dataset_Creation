@@ -1,0 +1,704 @@
+{
+    "Cases": [
+        {
+            "number": 1,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 2,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 3,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 4,
+            "Correctness": "Correct",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 5,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 6,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 7,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 8,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 9,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 10,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 11,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 12,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 13,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 14,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 15,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 16,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 17,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 18,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 19,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 20,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 21,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 22,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 23,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 24,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 25,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 26,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 27,
+            "Correctness": "Correct",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 28,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 29,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 30,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Inconsistent",
+            "Answer Completeness": "Incomplete",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 31,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 32,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 33,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 34,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 35,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 36,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 37,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 38,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Non-essential but Correct"
+        },
+        {
+            "number": 39,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 40,
+            "Correctness": "Correct",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 41,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 42,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 43,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 44,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 45,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 46,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 47,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 48,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Inconsistent",
+            "Answer Completeness": "Incomplete",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 49,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 50,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 51,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 52,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 53,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 54,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 55,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 56,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 57,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Incomplete",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 58,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 59,
+            "Correctness": "Correct",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 60,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 61,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 62,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 63,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 64,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 65,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 66,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 67,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 68,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 69,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 70,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 71,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 72,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 73,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 74,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 75,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 76,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 77,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 78,
+            "Correctness": "Correct",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 79,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 80,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 81,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 82,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 83,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 84,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Non-essential but Correct"
+        },
+        {
+            "number": 85,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 86,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 87,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 88,
+            "Correctness": "Correct",
+            "Consistency with Report": "Partially Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 89,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 90,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 91,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 92,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 93,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 94,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 95,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 96,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Partially Complete",
+            "Clinical Relevance": "Non-essential but Correct"
+        },
+        {
+            "number": 97,
+            "Correctness": "Incorrect",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Incomplete",
+            "Clinical Relevance": "Incorrect and Misleading"
+        },
+        {
+            "number": 98,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 99,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        },
+        {
+            "number": 100,
+            "Correctness": "Correct",
+            "Consistency with Report": "Fully Consistent",
+            "Answer Completeness": "Complete Answer",
+            "Clinical Relevance": "Essential"
+        }
+    ]
+}
