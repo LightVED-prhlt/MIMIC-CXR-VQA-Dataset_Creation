@@ -379,6 +379,96 @@
             The results show that generic pretrained vision–language models underperform when directly applied to medical VQA. While Cycle-VQA and BLIP-2 provide strong conceptual and pretrained baselines, the domain-adapted SwinVED pipeline consistently achieves higher scores. Progressive optimization through encoder unfreezing and reinforcement learning leads to the best overall performance, highlighting the importance of task-specific training for medical visual question answering.
           </p>
         </div>
+		<!-- Qualitative Results Table -->
+		<div class="columns is-centered" style="margin-top: 2rem;">
+		<div class="column is-four-fifths">
+
+			<div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+			<table class="table is-bordered is-striped is-hoverable is-fullwidth"
+					style="table-layout: fixed; font-size: 0.75rem;">
+				<thead>
+				<tr>
+					<th style="width:10%; text-align:center;">Image</th>
+					<th style="width:18%;">Question</th>
+					<th style="width:18%;">Reference</th>
+					<th style="width:18%;">VED Hypothesis</th>
+					<th style="width:18%;">BLIP-2 Hypothesis</th>
+					<th style="width:18%;">Cycle-VQA Hypothesis</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td style="text-align:center;">
+					<img src="./static/images/49.jpg" alt="49.jpg" style="max-width:100%; height:auto;">
+					</td>
+					<td>Is the heart size normal?</td>
+					<td>The heart size is moderately enlarged.</td>
+					<td>The heart is mildly enlarged.</td>
+					<td>The heart size is normal.</td>
+					<td>No pneumothorax is observed.</td>
+				</tr>
+
+				<tr>
+					<td style="text-align:center;">
+					<img src="./static/images/124.jpg" alt="124.jpg" style="max-width:100%; height:auto;">
+					</td>
+					<td>Which support devices are found?</td>
+					<td>A PICC, tracheostomy tube, and percutaneous gastrostomy tube are observed.</td>
+					<td>A tracheostomy tube and a left-sided PICC line are observed.</td>
+					<td>A left ventricular assist device is seen.</td>
+					<td>Bibasilar atelectasis is observed.</td>
+				</tr>
+
+				<tr>
+					<td style="text-align:center;">
+					<img src="./static/images/436.jpg" alt="436.jpg" style="max-width:100%; height:auto;">
+					</td>
+					<td>Is edema observed?</td>
+					<td>Mild pulmonary edema is observed.</td>
+					<td>Pulmonary edema is observed.</td>
+					<td>No edema is observed.</td>
+					<td>Bilateral pleural effusions are observed.</td>
+				</tr>
+
+				<tr>
+					<td style="text-align:center;">
+					<img src="./static/images/620.jpg" alt="620.jpg" style="max-width:100%; height:auto;">
+					</td>
+					<td>What evidence of atelectasis is present?</td>
+					<td>
+					The left hemidiaphragm shows decreased visibility, suggesting atelectasis or a small pleural effusion.
+					</td>
+					<td>Retrocardiac atelectasis is observed.</td>
+					<td>Atelectasis is observed.</td>
+					<td>Bilateral pleural effusions are observed.</td>
+				</tr>
+
+				<tr>
+					<td style="text-align:center;">
+					<img src="./static/images/760.jpg" alt="760.jpg" style="max-width:100%; height:auto;">
+					</td>
+					<td>Is cardiomegaly present?</td>
+					<td>Cardiomegaly is observed.</td>
+					<td>The cardiac silhouette is observed to be enlarged.</td>
+					<td>No cardiomegaly is observed.</td>
+					<td>No fracture is observed in the radiograph.</td>
+				</tr>
+				</tbody>
+			</table>
+			</div>
+
+			<p class="has-text-grey is-size-7 has-text-centered">
+			Table 2: Qualitative comparison of generated answers across models. The SwinVED model
+			produces responses that are more clinically accurate and aligned with the reference annotations.
+			</p>
+
+		</div>
+		</div>
+		<div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            Table 2 presents a qualitative comparison of representative Medical VQA examples across models. While the SwinVED model generally produces answers that are clinically accurate and aligned with the reference annotations, Cycle-VQA is the least accurate among the compared methods, frequently failing to target the question correctly and often generating responses that describe unrelated findings or different pathologies. This behavior suggests limited question–answer grounding, particularly in cases requiring precise identification of specific clinical conditions.
+          </p>
+        </div>
 
       </div>
     </div>
