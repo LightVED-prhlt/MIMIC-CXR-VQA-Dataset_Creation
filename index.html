@@ -274,39 +274,122 @@
 
 
 <section class="section hero">
-	<div class="container is-max-desktop">
-		<div class="columns is-centered has-text-centered">
-			<div class="column is-four-fifths">
-				<h2 class="title is-3">Results</h2>
-				<div class="publication-image">
-					<figure class="publication-image">
-						<img src="./static/images/FinalLabelDistribution.png"
-							alt="Final distribution of generated questions across labels"
-							class="hover-zoom"
-							style="max-width: 70%; height: auto;">
+  <div class="container is-max-desktop">
 
-						<figcaption class="has-text-grey is-size-7">
-							Figure 1: Final distribution of generated questions across all pathology labels, illustrating the double balancing of the dataset.
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-		</div>
-		<div class="columns is-centered has-text-centered">
-			<div class="column is-four-fifths">
-				<div class="content has-text-justified">
-					<p>
-						The proposed dataset is a large-scale medical Visual Question Answering resource constructed from the MIMIC-CXR database, comprising <b>3,247,512 question–answer pairs</b> derived from over 227,000 chest X-ray studies. The questions cover <b>15 clinically relevant categories</b>, including major thoracic findings such as cardiomegaly, pneumonia, pneumothorax, pleural effusion, and support devices, enabling broad diagnostic coverage. This scale makes the dataset suitable for training modern multimodal models while remaining grounded in real-world radiological practice.<br><br>
-						
-						A defining characteristic of the dataset is the nature of its answers. Instead of short, templated, or label-like responses, all answers are <b>open-ended, descriptive, and linguistically rich</b>, generated using a controlled LLM-based pipeline built on LLaMA 3.1. The generation process enforces a strict evidence-based constraint, ensuring that every answer is fully grounded in the radiographic findings and expressed using radiology-consistent language. This design transforms medical VQA from a classification-style task into a <b>genuine generative reasoning problem</b>, better aligned with how radiologists interpret and describe images.<br><br>
-						
-						Importantly, the dataset is <b>doubly balanced</b>. First, it is balanced across pathology categories, preventing any single finding from dominating the question distribution. Second, it is balanced between <b>positive and negative findings</b>. Because clinical datasets naturally contain more positive labels, additional questions are generated from not-mentioned conditions and treated as negative evidence. This dual balancing strategy mitigates dataset bias, discourages shortcut learning, and encourages models to reason explicitly about both the presence and absence of radiological findings.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- Title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <div style="
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        ">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth"
+                 style="
+                   table-layout: fixed;
+                   font-size: 0.75rem;
+                 ">
+            <thead>
+              <tr>
+                <th style="text-align:left; width:22%;">Model</th>
+                <th>BLEU-1</th>
+                <th>BLEU-2</th>
+                <th>BLEU-3</th>
+                <th>BLEU-4</th>
+                <th>METEOR</th>
+                <th>ROUGE-L</th>
+                <th>CIDEr</th>
+                <th>BERTScore</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CYCLE-VQA</td>
+                <td>0.0750</td>
+                <td>0.0507</td>
+                <td>0.0332</td>
+                <td>0.0205</td>
+                <td>0.1066</td>
+                <td>0.3382</td>
+                <td>0.4846</td>
+                <td>0.4863</td>
+              </tr>
+              <tr>
+                <td>BLIP-2</td>
+                <td>0.1357</td>
+                <td>0.0954</td>
+                <td>0.0705</td>
+                <td>0.0523</td>
+                <td>0.1300</td>
+                <td>0.3472</td>
+                <td>0.7657</td>
+                <td>0.5301</td>
+              </tr>
+              <tr>
+                <td>VED (Train Decoder FT-Swin)</td>
+                <td>0.2837</td>
+                <td>0.2132</td>
+                <td>0.1669</td>
+                <td>0.1323</td>
+                <td>0.1707</td>
+                <td>0.4125</td>
+                <td>1.6421</td>
+                <td>0.5937</td>
+              </tr>
+              <tr>
+                <td>VED (+ Unfreeze Swin)</td>
+                <td>0.2867</td>
+                <td>0.2165</td>
+                <td>0.1700</td>
+                <td>0.1352</td>
+                <td>0.1724</td>
+                <td>0.4137</td>
+                <td><strong>1.6514</strong></td>
+                <td>0.5954</td>
+              </tr>
+              <tr>
+                <td><strong>VED (+ RL)</strong></td>
+                <td><strong>0.3046</strong></td>
+                <td><strong>0.2290</strong></td>
+                <td><strong>0.1790</strong></td>
+                <td><strong>0.1416</strong></td>
+                <td><strong>0.1756</strong></td>
+                <td><strong>0.4143</strong></td>
+                <td>1.6329</td>
+                <td><strong>0.5957</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="has-text-grey is-size-7 has-text-centered">
+          Table 1: Quantitative comparison of VQA models on standard generation metrics.
+          Best results are highlighted in bold.
+        </p>
+
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            The results show that generic pretrained vision–language models underperform when directly applied to medical VQA. While Cycle-VQA and BLIP-2 provide strong conceptual and pretrained baselines, the domain-adapted SwinVED pipeline consistently achieves higher scores. Progressive optimization through encoder unfreezing and reinforcement learning leads to the best overall performance, highlighting the importance of task-specific training for medical visual question answering.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
+
+
+
+
+
 
 
 <section class="section" id="BibTeX">
