@@ -6,7 +6,7 @@
 			content="A novel Vision Encoder-Decoder (VED) model for Difference Medical VQA effectively compares chest X-rays, identifying significant changes like pneumonia with state-of-the-art accuracy, enhancing clinical decision-making.">
 	<meta name="keywords" content="X-ray, Vision Encoder-Decoder, VED, Mimic">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Unveiling Differences: A Vision Encoder-Decoder Model for Difference Medical Visual Question Answering</title>
+	<title>MIMIC-CXR-VQA: A Medical Visual Question Answering Dataset Constructed with LLaMA-based Annotations</title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -44,15 +44,15 @@
 		<div class="container is-max-desktop">
 			<div class="columns is-centered">
 				<div class="column has-text-centered">
-					<h1 class="title is-1 publication-title">Unveiling Differences: A Vision Encoder-Decoder Model for Difference Medical Visual Question Answering</h1>
+					<h1 class="title is-1 publication-title">MIMIC-CXR-VQA: A Medical Visual Question Answering Dataset Constructed with LLaMA-based Annotations</h1>
 					<div class="is-size-5 publication-authors">
-						<span class="author-block">
-						<a href=".">Luis-Jesus Marhuenda</a><sup>*</sup>,</span>
-						<span class="author-block">
-						<a href=".">Miquel Obrador-Reina</a><sup>*</sup>,</span>
 						<span class="author-block">
 						<a href=".">Mohamed Aas-Alas</a><sup>*</sup>,
 						</span>
+						<span class="author-block">
+						<a href=".">Miquel Obrador-Reina</a><sup>*</sup>,</span>
+						<span class="author-block">
+						<a href=".">Luis-Jesus Marhuenda</a><sup>*</sup>,</span>
 						<span class="author-block">
 						<a href=".">Alberto Albiol</a>,
 						</span>
@@ -62,14 +62,17 @@
 					</div>
 
 					<div class="is-size-5 publication-authors">
-						<span class="author-block">Universitat Politècnica de València<br>MIDL 2025</span>
+						<span class="author-block">Universitat Politècnica de València<br>MIDL 2026</span>
 						<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
 					</div>
 
 					<div class="column has-text-centered">
+						<p style="font-size:1.25rem; font-weight:600; opacity:0.7; margin-bottom:1rem;">
+						🚧 Some links will become available soon
+						</p>
 						<div class="publication-links">
 						<!-- PDF Link. -->
-						<span class="link-block">
+						<span class="link-block" style="pointer-events:none; opacity:0.45;">
 							<a href="https://lightved-prhlt.github.io/Diff-MedVQA/static/pdfs/paper.pdf"
 							class="external-link button is-normal is-rounded is-dark">
 							<span class="icon">
@@ -79,7 +82,7 @@
 							</a>
 						</span>
 						<span class="link-block">
-							<a href="https://openreview.net/pdf?id=8CNssOg7fk"
+							<a href="https://openreview.net/pdf?id=SOSjcyYEKO"
 							class="external-link button is-normal is-rounded is-dark">
 							<span class="icon">
 								<i class="fas fa-file-pdf"></i>
@@ -99,7 +102,7 @@
 						</span> -->
 						<!-- Code Link. -->
 						<span class="link-block">
-							<a href="https://github.com/lightved-prhlt/Diff-MedVQA"
+							<a href="https://github.com/LightVED-prhlt/MIMIC-CXR-VQA-Dataset_Creation"
 							class="external-link button is-normal is-rounded is-dark">
 							<span class="icon">
 								<i class="fab fa-github"></i>
@@ -116,12 +119,12 @@
 								<span>MIMIC-CXR Dataset</span>
 							</a>
 						</span>
-						<span class="link-block">
+						<span class="link-block" style="pointer-events:none; opacity:0.45;">
 							<a href="https://physionet.org/content/medical-diff-vqa/1.0.1/" class="external-link button is-normal is-rounded is-dark">
 								<span class="icon">
 									<i class="fas fa-file-csv"></i>
 								</span>
-								<span>Medical-Diff-VQA Dataset</span>
+								<span>MIMIC-CXR-VQA Dataset</span>
 							</a>
 						</span>
 						</div>
@@ -140,7 +143,7 @@
 				<h2 class="title is-3">Abstract</h2>
 				<div class="content has-text-justified">
 					<p>
-						Difference Medical Visual Question Answering (Diff-VQA), a specialized subfield of Medical VQA, tackles the critical task of identifying and describing differences between pairs of medical images. This study introduces a novel Vision Encoder-Decoder (VED) architecture tailored for this task, focusing on the comparison of chest X-ray images to detect and explain changes. The proposed model incorporates two key innovations: (1) a light-weight Transformer text decoder architecture capable of generating precise and contextually relevant answers to complex medical questions, and (2) an enhanced fusion mechanism that improves the model’s ability to distinguish between two input images, enabling more accurate comparison of radiological findings. Our approach excels in identifying significant changes, such as pneumonia and lung opacity, demonstrating its utility in automating preliminary radiological assessments. By leveraging large-scale, domain-specific datasets and employing advanced training strategies, our VED architecture achieves state-of-the-art performance on standard VQA metrics, setting a new benchmark in diagnostic accuracy. These advancements highlight the potential of Diff-VQA to enhance clinical workflows and support radiologists in making more precise, informed decisions.
+						The interpretation of chest X-rays (CXRs) is a critical yet time-consuming task in clinical radiology, often limited by the availability of expert radiologists. To address this challenge, we introduce a new large-scale medical Visual Question Answering (VQA) dataset derived from the MIMIC-CXR database, containing over 3.2 million question-answer (QA) pairs across 15 clinically relevant categories, enabling the training of multimodal models capable of answering a broad range of diagnostic questions directly from chest X-ray images. Unlike prior datasets, our QA pairs are generated using a large language model, LLaMA 3.1, guided by a carefully crafted prompt structure to produce rich, nuanced, and evidence-based textual answers grounded in radiology reports. We address limitations of existing datasets such as templated responses and linguistic monotony by ensuring diversity, completeness, and clinical fidelity in our QA pairs. To support benchmarking on this new dataset, we provide initial baseline models and training strategies designed to evaluate visual and textual reasoning performance in the medical VQA setting. Extensive experiments demonstrate the effectiveness of our approach across multiple evaluation metrics, establishing a strong benchmark for future research in medical VQA. Our dataset and baseline models pave the way for building clinically meaningful AI tools that can assist radiologists by answering complex diagnostic questions with accuracy and interpretability.
 					</p>
 				</div>
 			</div>
@@ -154,9 +157,18 @@
 	<div class="container is-max-desktop">
 		<div class="columns is-centered has-text-centered">
 			<div class="column is-four-fifths">
-				<h2 class="title is-3">Architecture</h2>
+				<h2 class="title is-3">Dataset</h2>
 				<div class="publication-image">
-					<img src="./static/images/architecture.jpg" alt="Architecture of the proposed model" class="hover-zoom">
+					<figure class="publication-image">
+						<img src="./static/images/FinalLabelDistribution.png"
+							alt="Final distribution of generated questions across labels"
+							class="hover-zoom"
+							style="max-width: 70%; height: auto;">
+
+						<figcaption class="has-text-grey is-size-7">
+							Figure 1: Final distribution of generated questions across all pathology labels, illustrating the double balancing of the dataset.
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -164,11 +176,11 @@
 			<div class="column is-four-fifths">
 				<div class="content has-text-justified">
 					<p>
-						The proposed architecture focuses on a Vision Encoder-Decoder scheme specifically designed to compare pairs of chest X-ray images and generate answers about changes between them. The <b>visual component</b> uses a Transformer-based backbone pre-trained and fine-tuned on radiograph data to extract representations from both images. These representations are augmented with a learnable indicator that signals which image is the reference and which is the current one, so that the fusion process can explicitly distinguish between the two inputs.<br><br>
+						The proposed dataset is a large-scale medical Visual Question Answering resource constructed from the MIMIC-CXR database, comprising <b>3,247,512 question–answer pairs</b> derived from over 227,000 chest X-ray studies. The questions cover <b>15 clinically relevant categories</b>, including major thoracic findings such as cardiomegaly, pneumonia, pneumothorax, pleural effusion, and support devices, enabling broad diagnostic coverage. This scale makes the dataset suitable for training modern multimodal models while remaining grounded in real-world radiological practice.<br><br>
 						
-						The <b>text decoder</b> is a lightweight Transformer that processes the tokenized question and integrates the differentiated visual information via cross-attention. Given the relatively limited vocabulary and structure of questions in this domain, a smaller decoder is chosen to generate precise answers without requiring large-scale pre-trained language models. At each generation step, the decoder combines the textual context (the question and previously generated tokens) with the fused visual features, producing the answer autoregressively and ensuring coherence in comparing the reference and current images.<br><br>
+						A defining characteristic of the dataset is the nature of its answers. Instead of short, templated, or label-like responses, all answers are <b>open-ended, descriptive, and linguistically rich</b>, generated using a controlled LLM-based pipeline built on LLaMA 3.1. The generation process enforces a strict evidence-based constraint, ensuring that every answer is fully grounded in the radiographic findings and expressed using radiology-consistent language. This design transforms medical VQA from a classification-style task into a <b>genuine generative reasoning problem</b>, better aligned with how radiologists interpret and describe images.<br><br>
 						
-						The <b>training strategy</b> is organized in staged phases: first, the visual encoder is fine-tuned exclusively on radiographs to learn domain-specific features; next, the text decoder is integrated and initially trained alone with the encoder frozen, optimizing visual-text fusion in isolation; finally, a joint fine-tuning of both encoder and decoder is performed to adjust the entire system. During this process, techniques such as hard example selection and image augmentations are applied to strengthen the model’s robustness against real variations in radiographs.
+						Importantly, the dataset is <b>doubly balanced</b>. First, it is balanced across pathology categories, preventing any single finding from dominating the question distribution. Second, it is balanced between <b>positive and negative findings</b>. Because clinical datasets naturally contain more positive labels, additional questions are generated from not-mentioned conditions and treated as negative evidence. This dual balancing strategy mitigates dataset bias, discourages shortcut learning, and encourages models to reason explicitly about both the presence and absence of radiological findings.
 					</p>
 				</div>
 			</div>
@@ -182,21 +194,76 @@
 	<div class="container is-max-desktop">
 		<div class="columns is-centered has-text-centered">
 			<div class="column is-four-fifths">
-				<h2 class="title is-3">Results</h2>
+				<h2 class="title is-3">Baselines</h2>
+			</div>
+		</div>
+
+		<!-- Baseline 1 -->
+		<div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
 				<div class="publication-image">
-					<img src="./static/images/results.svg" alt="Results of the proposed model" class="hover-zoom">
+					<figure class="publication-image">
+						<img src="./static/images/SwinDecoder-SCST.png"
+							alt="SwinVED-SCST architecture"
+							class="hover-zoom">
+
+						<figcaption class="has-text-grey is-size-7">
+							Figure 2: SwinVED-SCST vision encoder–decoder architecture with reinforcement learning via SCST.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="content has-text-justified">
+					<p>
+						<b>SwinVED-SCST</b> is a vision encoder–decoder baseline specifically adapted to the medical VQA setting. It combines a Swin Transformer encoder, pre-trained and fine-tuned on chest radiographs, with a lightweight Transformer decoder for answer generation. The model is trained in multiple stages, culminating in reinforcement learning with Self-Critical Sequence Training (SCST), where BERTScore is used as a reward to directly optimize semantic alignment and clinical coherence. This baseline demonstrates how task-specific visual encoders and sequence-level optimization significantly improve the quality and fidelity of generated medical answers.
+					</p>
 				</div>
 			</div>
 		</div>
+
+		<!-- Baseline 2 -->
 		<div class="columns is-centered has-text-centered">
 			<div class="column is-four-fifths">
+				<div class="publication-image">
+					<figure class="publication-image">
+						<img src="./static/images/blip2vqa.png"
+							alt="BLIP-2 MultiView architecture"
+							class="hover-zoom">
+
+						<figcaption class="has-text-grey is-size-7">
+							Figure 3: BLIP-2 MultiView architecture adapted for medical visual question answering.
+						</figcaption>
+					</figure>
+
+				</div>
 				<div class="content has-text-justified">
 					<p>
-						Our results confirm that the proposed method clearly outperforms the state of the art in Medical VQA. In our overall evaluations, our model produces answers that are more coherent, fluent, and clinically relevant than those of previous approaches, thanks to an architecture specifically designed to interpret radiological images and generate precise diagnoses. This improvement is reflected across all quality metrics, demonstrating that our training strategy and network modifications foster a deeper understanding of the medical context and yield text that more faithfully mirrors clinical reasoning.<br><br>
+						<b>BLIP-2 MultiView</b> adapts the general-purpose BLIP-2 framework to the multi-view nature of chest radiography. It employs a frozen EVA-CLIP vision encoder and a frozen FLAN-T5 language model, while training only the Q-Formers and projection layers. Separate visual embeddings are extracted for each available radiographic view and concatenated into a structured visual prefix. This baseline serves as a strong pretrained multimodal reference, illustrating the limitations of generic vision–language models when applied directly to domain-specific medical reasoning tasks.
+					</p>
+				</div>
+			</div>
+		</div>
 
-						Beyond the aggregate numbers, the qualitative analysis of two extreme examples—both achieving maximum metric scores—reveals a crucial insight. In the first case, the model’s response perfectly matches the true diagnosis, identifying every anomaly and adequately justifying each finding. However, in the second case, despite registering the same high quantitative scores, the model commits a diagnostic error: it either assumes that certain abnormalities have resolved when they remain present.<br><br>
 
-						This contrast highlights a decisive limitation of current metrics: they measure linguistic and structural similarity but fail to capture the clinical validity of the content. In a setting where automated diagnoses can directly influence medical decisions, this gap is unacceptable. Thus, our results not only establish a new benchmark in quantitative performance but also underscore the urgent need to develop evaluation metrics tailored to Medical VQA—metrics capable of verifying diagnostic accuracy and ensuring patient safety.
+		<!-- Baseline 3 -->
+		<div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
+				<div class="publication-image">
+					<figure class="publication-image">
+						<img src="./static/images/cycle-vqa.png"
+							alt="Cycle-VQA architecture"
+							class="hover-zoom"
+							style="max-width: 60%; height: auto;">
+
+						<figcaption class="has-text-grey is-size-7">
+							Figure 4: Cycle-VQA architecture adapted from Fan et al. (2025).
+						</figcaption>
+					</figure>
+
+				</div>
+				<div class="content has-text-justified">
+					<p>
+						In addition to our own baselines, we include <b><a href="https://www.sciencedirect.com/science/article/pii/S0031320325002699" target="_blank" rel="noopener noreferrer">Cycle-VQA</a></b>
+ 						as a recent Medical VQA method for comparison. Cycle-VQA introduces a <b>cycle-consistent reasoning framework</b> that enforces bidirectional consistency between questions, answers, and visual features during training. By jointly optimizing forward reasoning (question–image to answer) and backward reasoning (answer–image to question), Cycle-VQA aims to improve robustness and reduce language bias, providing a strong reference point for evaluating reasoning-focused approaches in medical visual question answering.
 					</p>
 				</div>
 			</div>
@@ -205,15 +272,53 @@
 </section>
 <!-- End architecture -->
 
+
+<section class="section hero">
+	<div class="container is-max-desktop">
+		<div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
+				<h2 class="title is-3">Results</h2>
+				<div class="publication-image">
+					<figure class="publication-image">
+						<img src="./static/images/FinalLabelDistribution.png"
+							alt="Final distribution of generated questions across labels"
+							class="hover-zoom"
+							style="max-width: 70%; height: auto;">
+
+						<figcaption class="has-text-grey is-size-7">
+							Figure 1: Final distribution of generated questions across all pathology labels, illustrating the double balancing of the dataset.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
+				<div class="content has-text-justified">
+					<p>
+						The proposed dataset is a large-scale medical Visual Question Answering resource constructed from the MIMIC-CXR database, comprising <b>3,247,512 question–answer pairs</b> derived from over 227,000 chest X-ray studies. The questions cover <b>15 clinically relevant categories</b>, including major thoracic findings such as cardiomegaly, pneumonia, pneumothorax, pleural effusion, and support devices, enabling broad diagnostic coverage. This scale makes the dataset suitable for training modern multimodal models while remaining grounded in real-world radiological practice.<br><br>
+						
+						A defining characteristic of the dataset is the nature of its answers. Instead of short, templated, or label-like responses, all answers are <b>open-ended, descriptive, and linguistically rich</b>, generated using a controlled LLM-based pipeline built on LLaMA 3.1. The generation process enforces a strict evidence-based constraint, ensuring that every answer is fully grounded in the radiographic findings and expressed using radiology-consistent language. This design transforms medical VQA from a classification-style task into a <b>genuine generative reasoning problem</b>, better aligned with how radiologists interpret and describe images.<br><br>
+						
+						Importantly, the dataset is <b>doubly balanced</b>. First, it is balanced across pathology categories, preventing any single finding from dominating the question distribution. Second, it is balanced between <b>positive and negative findings</b>. Because clinical datasets naturally contain more positive labels, additional questions are generated from not-mentioned conditions and treated as negative evidence. This dual balancing strategy mitigates dataset bias, discourages shortcut learning, and encourages models to reason explicitly about both the presence and absence of radiological findings.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
 	<h2 class="title">BibTeX</h2>
-	<pre><code>@inproceedings{obrador-reina2025unveiling,
-  title      = {Unveiling Differences: A Vision Encoder-Decoder Model for Difference Medical Visual Question Answering},
-  author     = {Luis-Jesus Marhuenda and Miquel Obrador-Reina and Mohamed Aas-Alas and Alberto Albiol and Roberto Paredes},
-  booktitle  = {Medical Imaging with Deep Learning},
+	<pre><code>@inproceedings{aas-alas2025mimiccxrvqa,
+  title      = {{MIMIC}-{CXR}-{VQA}: A Medical Visual Question Answering Dataset Constructed with {LL}a{MA}-based Annotations},
+  author     = {Mohamed Aas-Alas and Miquel Obrador-Reina and Luis-Jesus Marhuenda and Alberto Albiol and Roberto Paredes},
+  booktitle  = {Submitted to Medical Imaging with Deep Learning},
   year       = {2025},
-  url        = {https://openreview.net/forum?id=8CNssOg7fk}
+  url        = {https://openreview.net/forum?id=SOSjcyYEKO},
+  note		 = {under review}
 }</code></pre>
   </div>
 </section>
